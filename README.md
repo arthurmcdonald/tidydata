@@ -23,10 +23,10 @@ Input:
   * ```subject_train.txt```
 * ```data/features.txt```
 
-The run script reads the test and train data files and first column appends 
-the test data, column appends the train data, then row appends these two 
+The run script reads the test and train data files and appends the columns in
+the test data, appends the columns in the train data, then row appends these two 
 dataframes to get the full dataset. It uses the features.txt data as the column
-headings for all columns except SubjectID (found in the subject_* files) and
+headings for all of columns except SubjectID (found in the subject_* files) and
 Activity (found in the y_* files).
 
 The script then drops all columns that are not mean, std (standard deviation),

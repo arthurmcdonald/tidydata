@@ -1,9 +1,18 @@
 # Codebook
+The features selected for this dataset (the output of the run_analysis.R script)
+come from the raw data listed in the [references](#references) section. 
+The Mean and Standard Deviation features were selected and the averages of each 
+feature, grouped by Subject and Activity, were calculated and used for 
+this dataset.
+
+The original raw data has 30 Subjects and 6 Activities, giving this data
+```30 * 6 = 180``` rows. The columns are SubjectID, Activity, and the 66 
+columns selected from the raw data, giving a total of 68.
 
 ## Features:
 * SubjectID
 
-  The ID of the Subject observed
+  The ID of the Subject observed. Values are from 1 to 30.
 * Activity
 
   The activity observed. Can be one of:
@@ -16,8 +25,10 @@
 
 For the data fields below, the tidy_data is the average of each of the fields
 by Subject/Activity. To understand the field names refer to 
-[this reference table](##reference-table). You can also refer to the the 
-original description of the data in ```data/feature_info.txt```
+[this reference table](#reference-table). You can also refer to the 
+original description of the data in ```data/feature_info.txt```. In the original
+data, each feature was normalized and bounded within [-1,1], so these averages
+are also within that range.
 
 * TimeBodyAccMean{X, Y, Z}
 * TimeGravityAccMean{X, Y, Z}
@@ -69,6 +80,10 @@ original description of the data in ```data/feature_info.txt```
 | Std     | Standard Deviation                       |
 | Mag     | Magnitude of signal                      |
 
+
+## References
+* Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. 
+* http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
 
 
 
