@@ -61,4 +61,4 @@ full_data["Activity"][full_data["Activity"] == 6] <- "LAYING"
 tidy_data <- full_data %>% group_by(SubjectID, Activity) %>% summarise_all(mean)
 
 # write the tidy_data out to a csv
-write.table(tidy_data, "tidy_data.csv", sep=",")
+write.table(tidy_data, "tidy_data.csv", sep=",", row.names=FALSE)
