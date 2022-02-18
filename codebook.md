@@ -2,8 +2,10 @@
 
 ## Features:
 * SubjectID
+
   The ID of the Subject observed
 * Activity
+
   The activity observed. Can be one of:
   * WALKING
   * WALKING_UPSTAIRS
@@ -11,6 +13,11 @@
   * SITTING
   * STANDING
   * LAYING
+
+For the data fields below, the tidy_data is the average of each of the fields
+by Subject/Activity. To understand the field names refer to 
+[this reference table](##reference-table). You can also refer to the the 
+original description of the data in ```data/feature_info.txt```
 
 * TimeBodyAccMean{X, Y, Z}
 * TimeGravityAccMean{X, Y, Z}
@@ -47,9 +54,20 @@
 * FourierBodyBodyGyroMagStd
 * FourierBodyBodyGyroJerkMagStd
 
+## Reference Table
 
-
-
+| Code    | Description                              |
+| ------- | ---------------------------------------- |
+| Time    | Time domain signal                       |
+| Fourier | Fast Fourier Transform applied to signal |
+| Body    | Body acceleration signal                 |
+| Acc     | Accelerometer                            |
+| Mean    | Mean/Average                             |
+| Gravity | Gravity acceleration signal              |
+| Jerk    | Jerk signal                              |
+| Gyro    | Gyroscope signal                         |
+| Std     | Standard Deviation                       |
+| Mag     | Magnitude of signal                      |
 
 
 
