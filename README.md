@@ -36,6 +36,9 @@ changes the Activity codes to their corresponding labels (found in
 data by SubjectID and Activity, and find the mean for each other column.
 
 Output:
+
 ```tidy_data.csv```
+
 180 rows (30 subjects * 6 activities)
+
 68  cols (66 data variables + SubjectID + Activity)
